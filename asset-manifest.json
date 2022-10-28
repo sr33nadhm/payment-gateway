@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/payment-gateway/static/css/main.a6dda228.css",
-    "main.js": "/payment-gateway/static/js/main.01c8771e.js",
+    "main.js": "/payment-gateway/static/js/main.3b0ba18f.js",
     "index.html": "/payment-gateway/index.html",
     "main.a6dda228.css.map": "/payment-gateway/static/css/main.a6dda228.css.map",
-    "main.01c8771e.js.map": "/payment-gateway/static/js/main.01c8771e.js.map"
+    "main.3b0ba18f.js.map": "/payment-gateway/static/js/main.3b0ba18f.js.map"
   },
   "entrypoints": [
     "static/css/main.a6dda228.css",
-    "static/js/main.01c8771e.js"
+    "static/js/main.3b0ba18f.js"
   ]
 }
