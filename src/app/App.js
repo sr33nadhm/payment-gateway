@@ -42,6 +42,44 @@ function App() {
         contact: "+919645243474",
         email: "sreenadhm01@gmail.com",
       },
+      config: {
+        display: {
+          blocks: {
+            utib: { //name for Axis block
+              name: "Pay using Axis Bank",
+              instruments: [
+                {
+                  method: "card",
+                  issuers: ["UTIB"]
+                },
+                {
+                  method: "netbanking",
+                  banks: ["UTIB"]
+                },
+                {
+                  method: "upi"
+                }
+              ]
+            },
+            other: { //  name for other block
+              name: "Other Payment modes",
+              instruments: [
+                {
+                  method: "card",
+                  issuers: ["ICIC"]
+                },
+                {
+                  method: 'netbanking',
+                }
+              ]
+            }
+          },
+          sequence: ["block.utib", "block.other"],
+          preferences: {
+            show_default_blocks: false // Should Checkout show its default blocks?
+          }
+        }
+      },
       handler: async function (response) {
         console.log(response);
         if (response.razorpay_payment_id) {
@@ -91,8 +129,11 @@ function App() {
               <Typography variant="body2" color="text.secondary" className="card-desc">
                 Welcome! This is an example for payment gateway integration. This is just a dummy transaction to
                 simulate the capabilities of a payment gateway and just to show how easy it is to complete a payment.
-                Please refrain from providing actual data. Give it a try! <br />
-                <br />
+                Please refrain from providing actual data.
+                <br /> <br />
+                Not sure how to enter dummy payment details? Or need a dummy card input for Razorpay?
+                See the Razorpay dummy card inputs <a href="https://razorpay.com/docs/payments/payments/test-card-details/#test-card-for-indian-payments">here</a>
+                <br /> <br />
                 <b>Please click on checkout to proceed!</b>
               </Typography>
             </Stack>

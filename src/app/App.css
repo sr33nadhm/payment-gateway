@@ -12,15 +12,18 @@
   width: 100%;
   display: flex;
   padding: 20px;
-  height: 30vh;
+  height: 40vh;
 }
+
 .custom-navbar {
   background-color: #fff !important;
   color: black !important;
 }
+
 .address-row {
   margin-left: 8px !important;
 }
+
 .card-desc {
   padding: 5px;
 }
@@ -30,11 +33,13 @@
     min-height: calc(100vh - 56px);
     padding-top: 15vh;
   }
+
   .address-row {
     max-width: 250px;
     text-overflow: ellipsis;
     overflow: hidden;
   }
+
   .card-box {
     max-width: 90vw !important;
   }
@@ -46,6 +51,7 @@
     min-height: calc(100vh - 64px);
     align-items: center;
   }
+
   .app-card {
     width: 540px !important;
   }
